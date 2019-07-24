@@ -1,0 +1,424 @@
+<html>
+<head><title>Restaurants list</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.navi
+{
+    overflow: hidden;
+  background-color:indianred;
+  background-size:40px;
+}
+.navi a
+{
+	float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  }
+  .navi a:hover 
+  {
+  background-color:gray;
+
+  color: black;
+}
+  
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: indianred;
+  color: white;
+  text-align: center;
+}
+  
+h1
+{
+ font-weight:1000;
+
+color:black;
+}
+h2
+{
+ font-weight:400;
+
+color:black;
+}
+p
+{
+color:black;}
+
+</style>
+</head>
+
+<body background="static/images/bg7.jpg">
+    <div class="navi">
+        <a href="/home" data-toggle="tooltip" title="Home page"><img src="static/images/home.png" width="30px" height="23px" />Home</a>
+        <a href="/mapdry" data-toggle="tooltip" title="shortest path map for dry waste "><img src="static/images/drytruck.PNG" height="23px" width="40px" />&nbsp;Dry Waste</a>
+        <a href="/mapwet" data-toggle="tooltip" title="shortest path map for wet waste "><img src="static/images/wettruck.PNG" height="23px" width="40px" />&nbsp;Wet Waste</a>
+        <a href="/res" data-toggle="tooltip" title="Details of restaurants "><img src="static/images/rest.png" />&nbsp;&nbsp;Restaurants</a>
+        <a href="/driver" data-toggle="tooltip" title="Details of truck drivers "><img src="static/images/drive.png" width="30px" height="23px" />Driver</a>
+        <a href="/about" data-toggle="tooltip" title="Know about website admins"><img src="static/images/abouticon2.png" width="35px" height="25px" />&nbsp;About Us</a>
+
+    </div>
+
+
+    <br>
+
+    <h1 style="color:white;"><center><b>Restaurant List</strong></b></center></h1>
+    <div class="container">
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse1" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/1a.jpg" alt="Los Angeles" style="width:100%; height:270px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/1b.jpg" alt="Chicago" style="width:100%; height:270px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/1c.jpg" alt="New york" style="width:100%; height:270px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2> Byg Brewski Brewing Company&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <p>
+                    Byrathi Village Sothern Asia Bible College,<br /> 22, Hennur Bagalur Rd, Visthar, <br />Bengaluru, Karnataka 560077<br />
+                    <a href="http://www.bygbrewski.com/"> www.bygbrewski.com</a><br />
+
+
+                    +91 80 4680 9796
+
+                </p>
+                <br />
+            </div>
+        </div>
+
+        <!----this is second restaurant-->
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse2" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/2a.jpg" alt="Los Angeles" style="width:100%; height:208px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/2b.jpg" alt="Chicago" style="width:100%; height:208px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/2c.jpg" alt="New york" style="width:100%; height:208px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse2" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2>Hallimane Pure Veg Restaurant</h2>
+                <p>
+                    Service Rd, APMC Yard, Yesvantpur<br />  Industrial Suburb, Mahalakshmi Layout,<br />  Bengaluru, Karnataka 560022
+
+                </p>
+                <br />
+            </div>
+        </div>
+        <!------third restaurant-->
+
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse3" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/3a.jpg" alt="Los Angeles" style="width:100%; height:270px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/3b.jpg" alt="Chicago" style="width:100%; height:270px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/3c.jpg" alt="New york" style="width:100%; height:270px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse3" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse3" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2> Saffron</h2>
+                <p>
+                    Level 18, Hotel Shangri-La, 56-6B,<br />  Abshot Layout, Vasanth Nagar, <br /> Bengaluru, Karnataka 560056<br />
+                    <a href="https://www.shangri-la.com/"> www.shangri-la.com</a><br />
+                    +91 80 4512 6430
+
+
+                </p>
+                <br />
+            </div>
+        </div>
+
+
+
+        <!------fourth restaurant-->
+
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse4" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/4a.jpg" alt="Los Angeles" style="width:100%; height:258px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/4b.jpg" alt="Chicago" style="width:100%; height:258px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/4c.jpg" alt="New york" style="width:100%; height:258px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse4" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse4" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2>K & K</h2>
+                <p>
+                    ITC Gardenia, Ashok Nagar, <br />
+                    Bengaluru,Karnataka 560001<br />
+                    <a href="https://www.itchotels.in/">www.itchotels.in</a><br />
+                    +91 80 2211 9898
+
+                </p>
+                <br />
+                <br />
+            </div>
+        </div>
+
+
+        <!------fifth restaurant-->
+
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse5" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/5a.jpg" alt="Los Angeles" style="width:100%; height:239px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/5b.jpg" alt="Chicago" style="width:100%; height:239px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/5c.jpg" alt="New york" style="width:100%; height:239px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse5" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse5" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2>Alto Vino ,Marriott Hotel </h2>
+                <p>
+                    Plot No 75, 8th Rd, EPIP Zone,<br />
+                    Whitefield, Bengaluru, Karnataka 560066<br />
+                    <a href="https://www.marriott.com/default.mi">www.marriott.com</a><br />
+                    +91 80 4943 5000
+
+                </p>
+
+                <br />
+            </div>
+
+
+
+        </div>
+        <div class="jumbotron" style="padding:0px;">
+            <div style="float:left;">
+
+                <div id="myCarouse6" class="carousel slide" data-ride="carousel" style="height:200px;width:400px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/images/6a.jpg" alt="Los Angeles" style="width:100%; height:268px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/6b.jpg" alt="Chicago" style="width:100%; height:268px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/6c.jpg" alt="New york" style="width:100%; height:268px;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouse6" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouse6" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div style="padding-left:500px;">
+
+                <br />
+                <h2>Time Traveller (Urban Herbivore)</h2>
+                <p>
+                    144-C/1, Kirloskar Rd, Bommasandra <br />
+                    Industrial Area, Bengaluru, <br />
+                    Karnataka 560099<br />
+                    <a href="https://www.saivishram.com/time-traveller-restaurant/">www.saivishram.com</a><br />
+                    +91 80 4040 0400
+                </p>
+
+                <br />
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <center>&copy;&nbsp;Made by Smart Waste Management Project Group @ LTTS </center>
+    </div>
+
+
+
+</body>
+</html>

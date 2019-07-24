@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>waste management</title>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+h1{
+    text-shadow: 0 0 5px #FF0000;
+
+}
+.navi
+{
+
+  overflow: hidden;
+  background-color:indianred;
+  
+}
+.navi a
+{
+	float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  }
+  .navi a:hover 
+  {
+  background-color:gray;
+
+  color: black;
+}
+  
+h1
+{
+ font-weight:1000;
+text-align:center;
+color:white;
+
+
+}
+.container{
+    display: flex;
+  
+}
+
+
+.space
+{
+    margin-left:20px;
+}
+.card {
+
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+ 
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: indianred;
+  color: white;
+  text-align: center;
+}
+ #imagepro{
+        width:200px; height:200px 
+    }
+ #jumbpro{
+      width:400px;  padding:unset;
+ }
+</style>
+
+</head>
+<body background="static/images/bg7.jpg">
+           <div class="navi">
+            <a href="/home" data-toggle="tooltip" title="Home page"><img src="static/images/home.png" width="30px" height="23px"/>Home</a>
+            <a href="/map" data-toggle="tooltip" title="shortest path map for dry waste "><img src="static/images/drytruck.PNG" height="23px" width="40px" />&nbsp;Dry Waste</a>
+            <a href="/map1" data-toggle="tooltip" title="shortest path map for wet waste "><img src="static/images/wettruck.PNG" height="23px" width="40px" />&nbsp;Wet Waste</a>
+            <a href="/res" data-toggle="tooltip" title="Details of restaurants "><img src="static/images/rest.png"/>&nbsp;&nbsp;Restaurants</a>
+            <a href="" data-toggle="tooltip" title="Details of truck drivers "><img src="static/images/drive.png" width="30px" height="23px"/>Driver</a>
+            <a href="/about" data-toggle="tooltip" title="Know about website admins"><img src="static/images/abouticon2.png" width="35px" height="25px" />&nbsp;About Us</a>
+
+        </div>
+
+<div>
+    <br/>
+<br/>
+<br />
+ <b> <h1 align="center" style="color:white;"><img src="static/images/logo.PNG" height="45px" width="50px;" />&nbsp; SMART WASTE MANAGEMENT</h1></b>
+  </div>
+  
+ 
+  <div ba></div>  <br/>
+   
+
+    <br />
+    <br/>
+
+    
+    <div class="container">
+        <div class="space">
+
+        </div>
+<div class="space">
+
+        </div>
+        
+        
+            <div  class="jumbotron col-sm-6 text-center" style="height:80; width:40;">
+                <center>
+                    <a href="http://127.0.0.1:5001/dry_chart" data-toggle="tooltip" title="Dry waste bar graph"><img src="static/images/dry.PNG" alt="dry" height="120" width="120" ></a>
+
+                    <a href="http://127.0.0.1:5001/dry_chart" data-toggle="tooltip" title="Dry waste bar graph"><h3>DRY WASTE</h3></a>
+                </center>
+            </div>
+        <div class="space">
+
+        </div>
+        
+        <div  class="jumbotron col-sm-6 text-center" style="height:80; width:40;">
+            <center>
+                <a href="http://127.0.0.1:5001/wet_chart" data-toggle="tooltip" title="Wet waste bar graph"><img src="static/images/wet.PNG" alt="wet" height="100" width="100"></a>
+
+                <a href="http://127.0.0.1:5001/wet_chart" data-toggle="tooltip" title="Wet waste bar graph"><h3>WET WASTE</h3></a>
+            </center>
+        </div>
+    </div>
+
+    <div class="footer">
+        <center>&copy;&nbsp;Made by Smart Waste Management Project Group @ LTTS </center>
+    </div>
+ 
+  </body>
+  </html>
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>waste management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+.navi
+{
+
+  overflow: hidden;
+  background-color:indianred;
+  
+}
+.navi a
+{
+	float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  }
+  .navi a:hover 
+  {
+  background-color:gray;
+
+  color: black;
+}
+  
+h1
+{
+ font-weight:1000;
+text-align:center;
+color:white;
+
+
+}
+.container{
+    display: flex;
+  
+}
+
+
+.space
+{
+    margin-left:20px;
+}
+.card {
+
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+ 
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: indianred;
+  color: white;
+  text-align: center;
+}
+ #imagepro{
+        width:200px; height:200px 
+    }
+ #jumbpro{
+      width:400px;  padding:unset;
+ }
+
+    </style>
+
+</head>
+<body background="static/images/bg7.jpg">
+    <div class="navi">
+        <a href="/home" data-toggle="tooltip" title="Home page"><img src="static/images/home.png" width="30px" height="23px" />Home</a>
+        <a href="/mapdry" data-toggle="tooltip" title="shortest path map for dry waste "><img src="static/images/drytruck.PNG" height="23px" width="40px" />&nbsp;Dry Waste</a>
+        <a href="/mapwet" data-toggle="tooltip" title="shortest path map for wet waste "><img src="static/images/wettruck.PNG" height="23px" width="40px" />&nbsp;Wet Waste</a>
+        <a href="/res" data-toggle="tooltip" title="Details of restaurants "><img src="static/images/rest.png" />&nbsp;&nbsp;Restaurants</a>
+        <a href="/driver" data-toggle="tooltip" title="Details of truck drivers "><img src="static/images/drive.png" width="30px" height="23px" />Driver</a>
+        <a href="/about" data-toggle="tooltip" title="Know about website admins"><img src="static/images/abouticon2.png" width="35px" height="25px" />&nbsp;About Us</a>
+
+    </div>
+    <br />
+    <center> <h2 style="color:white;">Driver details</h2></center>
+    <br />
+    <br />
+    <div class="container">
+
+        <div class="space"></div>
+
+
+        <div class="space"></div><div class="space"></div>
+
+
+<div class="space"></div><div class="space"></div>
+
+
+<div class="space"></div>
+        <div class="jumbotron" id="jumbpro">
+
+            <div class="card">
+                <p></p>
+                <img src="static/images/driver1.jpeg" alt="wet driver license" id="imagepro" style="width:300px;">
+                <h2>Rohit</h2>
+                Wet waste driver<br />
+                Smart Waste Management<br />
+                <span class="glyphicon glyphicon-envelope"></span> &nbsp;&nbsp; rohit@gmail.com
+                <br />
+                <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;+91 9482697990
+                <p></p>
+            </div>
+        </div>
+
+        <div class="space"></div>
+
+
+        <div class="space"></div>
+        <div class="jumbotron" id="jumbpro">
+
+            <div class="card">
+                <p></p>
+                <img src="static/images/driver2.jpeg" alt="dry driver" id="imagepro" style="width:300px;">
+                <h2>Tejas</h2>
+               Dry waste driver<br />
+                Smart Waste Management<br />
+                <span class="glyphicon glyphicon-envelope"></span> &nbsp;&nbsp;Tejas@gmail.com
+                <br />
+                <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;+91 9482697991
+                <p></p>
+            </div>
+        </div>
+
+        <div class="space"></div>
+
+
+        <div class="space"></div>
+    </div>
+
+    <div class="footer">
+        <center>&copy;&nbsp;Made by Smart Waste Management Project Group @ LTTS </center>
+    </div>
+</body>
+</html>

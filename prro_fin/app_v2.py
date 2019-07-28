@@ -22,7 +22,8 @@ def get_per_waste():
     res_name_wet = []
     waste_per_dry = []
     res_name_dry = []
-    for x in mycol.find():
+    mydoc = mycol.find().sort('_id')
+    for x in mydoc:
         if (x['_id'] % 2 == 0):
             waste_per_wet.append(x['waste_per'])
             res_name_wet.append(x['Res_name'])
@@ -39,7 +40,8 @@ def get_corr():
     mycol = mydb[timestampStr]
     corr_dry = []
     corr_wet = []
-    for x in mycol.find():
+    mydoc = mycol.find().sort('_id')
+    for x in mydoc:
         if (x['waste_per']>=60):
         
             if (x['_id'] % 2 == 0):

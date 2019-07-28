@@ -11,9 +11,9 @@ app = Flask(__name__)
 
 myclient = pymongo.MongoClient("mongodb+srv://sitesh:Sitesh$$#5@cluster0-9jms6.azure.mongodb.net/test?retryWrites=true&w=majority")
 
-delta=3
+
 def get_per_waste(): 
-    time = datetime.now() - timedelta(days = delta) 
+    time = datetime.now() - timedelta(days = 3) 
 
     mydb = myclient["Waste_Management"]
     timestampStr = time.strftime("%d-%b-%Y")
@@ -32,7 +32,7 @@ def get_per_waste():
     
     return waste_per_wet,res_name_wet,waste_per_dry,res_name_dry
 def get_corr():
-    time = datetime.now() - timedelta(days = delta) 
+    time = datetime.now() - timedelta(days = 3) 
 
     mydb = myclient["Waste_Management"]
     timestampStr = time.strftime("%d-%b-%Y")

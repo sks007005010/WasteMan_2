@@ -72,7 +72,7 @@ def get_map(corr_lst,waste_per,waste_type):
     
     database_list=optimum_path(corr_lst) 
     folium.PolyLine(locations = database_list,line_opacity = 0.5).add_to(my_map4)
-    path_str = "C:\\Users\\flash\\Desktop\\prro_fin\\templates\\map"+ waste_type+".html"
+    path_str = "/templates/map"+ waste_type+".html"
     my_map4.save(path_str)
 
 cor_wet,cor_dry = get_corr()

@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 myclient = pymongo.MongoClient("mongodb+srv://sitesh:Sitesh$$#5@cluster0-9jms6.azure.mongodb.net/test?retryWrites=true&w=majority")
 
-delta=int(1)
+delta=int(2)
 def get_per_waste(): 
     time = datetime.now() - timedelta(days = delta) 
 

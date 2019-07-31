@@ -5,8 +5,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+h1{
+    text-shadow: 0 0 5px #FF0000;
 
+}
+</style>
+    
+ <script type="text/javascript"> 
+		function refreshtime(){
+				var refresh=1000; // Refresh rate in milli seconds
+				mytime=setTimeout('displaytime()',refresh)
+			}
+
+		function displaytime() {
+				var dt = new Date()
+				document.getElementById('time').innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" / "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+(("0"+dt.getSeconds()).slice(-2));
+				refreshtime();
+ 			}
+</script>
 </head>
+    
 <body background="static/images/bg7.jpg">
            <div class="navi">
             <a href="/home" data-toggle="tooltip" title="Home page"><img src="https://storage007005.blob.core.windows.net/images/home.png" width="30px" height="23px"/>Home</a>
@@ -15,7 +34,13 @@
             <a href="/res" data-toggle="tooltip" title="Details of restaurants "><img src="https://storage007005.blob.core.windows.net/images/rest.png"/>&nbsp;&nbsp;Restaurants</a>
             <a href="/driver" data-toggle="tooltip" title="Details of truck drivers "><img src="https://storage007005.blob.core.windows.net/images/drive.png" width="30px" height="23px"/>Driver</a>
             <a href="/about" data-toggle="tooltip" title="Know about website admins"><img src="https://storage007005.blob.core.windows.net/images/abouticon2.png" width="35px" height="25px" />&nbsp;About Us</a>
-
+<p style="
+				float: right;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 16px 16px;"><span id='time' ></span>
+			</p>
         </div>
 
 <div>
